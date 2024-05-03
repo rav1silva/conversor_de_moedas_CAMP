@@ -25,19 +25,24 @@ class _CounterPageState extends State<CounterPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
+        
 
 
         title: const Text(
           'Conversor de moedas',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 21,
-            fontWeight: FontWeight.bold,
+            fontSize: 16,
+          
           ),
         ),
 
 
         backgroundColor: Pallete.secondaryColor,
+        leading: Image.asset(
+          'assets/img/logo.png',
+        ),
+
         centerTitle: true,
         
       ),
@@ -76,8 +81,8 @@ class _CounterPageState extends State<CounterPage> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       const Icon(
-                        Icons.monetization_on,
-                        size: 150,
+                        Icons.attach_money,
+                        size: 145,
                         color: Pallete.secondaryColor,
                       ),
                       const Divider(),
